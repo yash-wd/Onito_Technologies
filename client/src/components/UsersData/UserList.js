@@ -13,8 +13,8 @@ const UserList = () => {
       console.log("Response status:", res.status);
       const data = await res.json();
       console.log("Fetched data:", data);
-      if (users.length > 0) {
-        setUsers(data);
+      if (data.getUserData && data.getUserData.length > 0) {
+        setUsers(data.getUserData);
       }
     } catch (e) {
       console.error("Fetch error:", e);
@@ -44,7 +44,8 @@ const UserList = () => {
           </tr>
         </thead>
         <tbody>
-          {users.map((user) => (
+          {users.length > 0 &&
+            users.map((user) => (
               <tr key={user._id}>
                 <td>{user.name}</td>
                 <td>{user.dob}</td>
