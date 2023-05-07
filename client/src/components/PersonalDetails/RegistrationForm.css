@@ -1,0 +1,103 @@
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+label {
+  margin: 0 30px 0 30px;
+  font-weight: bold;
+  width: 120px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+select {
+  width: 10%;
+  background-color: #fff;
+  color: #7e7b7b;
+  border: 1px solid #555555;
+  height: 30px;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 1;
+  margin-right: 20px;
+}
+
+option {
+  color: #000;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-container input[type="submit"],
+.button-container input[type="button"] {
+  width: 10%;
+  height: 50px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+  /* margin:0 10px; */
+  margin-right: 100px;
+  /* white-space: pre-wrap; */
+}
+
+.button-container input[type="button"] {
+  background-color: transparent;
+  color: red;
+  border: solid 1px red;
+  /* margin-right: 10px; */
+}
+
+.error-message {
+  color: red;
+  margin-top: 5px;
+}
+
+.mandatory {
+  color: red;
+  font-size: 16px;
+}
+
+h2 {
+  margin: 5px 30px;
+  text-decoration: underline;
+}
+
+input {
+  width: 20%;
+  height: 30px;
+  /* margin-left: -30px; */
+}
+
+.sectionn {
+  margin: 5px 30px;
+  display: flex;
+  align-items: flex-start;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
